@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "plugins": ["json"],
+  "rules": {
+    "no-console": ["error", {"allow": ["warn", "error"]}],
+    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_", "varsIgnorePattern": "^_"}]
+  }
+}

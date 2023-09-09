@@ -1,0 +1,48 @@
+{
+  "name": "hapi-server-session-next",
+  "version": "6.0.0",
+  "description": "Simple server-side session support for hapi",
+  "keywords": [
+    "hapi",
+    "plugin",
+    "server",
+    "session"
+  ],
+  "homepage": "https://github.com/dennis-dong/hapi-server-session",
+  "bugs": "https://github.com/dennis-dong/hapi-server-session/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Dennis",
+    "email": "dennis_dong@qq.com"
+  },
+  "files": [],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennis-dong/hapi-server-session.git"
+  },
+  "scripts": {
+    "codeclimate": "nyc report --reporter=lcov",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "eslint": "eslint --ext .js --ext .json .",
+    "prettier": "prettier --write **/*.{js,json,md}",
+    "test": "nyc mocha"
+  },
+  "dependencies": {
+    "@hapi/b64": "^6.0.1",
+    "@hapi/hoek": "^11.0.2"
+  },
+  "devDependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-json": "^2.1.2",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.1"
+  },
+  "peerDependencies": {
+    "@hapi/hapi": ">=21.0.0 <22.0.0"
+  }
+}
