@@ -8,18 +8,18 @@
     "server",
     "session"
   ],
-  "homepage": "https://github.com/dennis-dong/hapi-server-session",
-  "bugs": "https://github.com/dennis-dong/hapi-server-session/issues",
+  "homepage": "https://github.com/dennis-dong/hapi-server-session-next",
+  "bugs": "https://github.com/dennis-dong/hapi-server-session-next/issues",
   "license": "MIT",
   "author": {
     "name": "Dennis",
-    "email": "dennis_dong@qq.com"
+    "email": "374627149@qq.com"
   },
   "files": [],
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dennis-dong/hapi-server-session.git"
+    "url": "https://github.com/dennis-dong/hapi-server-session-next.git"
   },
   "scripts": {
     "codeclimate": "nyc report --reporter=lcov",
