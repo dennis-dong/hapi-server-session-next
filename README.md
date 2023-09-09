@@ -1,17 +1,12 @@
-# hapi-server-session
+# hapi-server-session-next
 
 Simple server-side session support for hapi
 
-[![npm version](https://badge.fury.io/js/hapi-server-session.svg)](https://badge.fury.io/js/hapi-server-session) [![Build Status](https://travis-ci.org/btmorex/hapi-server-session.svg?branch=master)](https://travis-ci.org/btmorex/hapi-server-session) [![Coverage Status](https://coveralls.io/repos/btmorex/hapi-server-session/badge.svg?branch=master&service=github)](https://coveralls.io/github/btmorex/hapi-server-session?branch=master) [![Dependency Status](https://david-dm.org/btmorex/hapi-server-session.svg)](https://david-dm.org/btmorex/hapi-server-session)
+[![npm version](https://badge.fury.io/js/hapi-server-session-next.svg)](https://badge.fury.io/js/hapi-server-session-next)
 
 ## Install
 
-    $ npm install hapi-server-session
-
-**For typescript users:**
-
-    $ npm install @types/hapi-server-session
-
+    $ npm install hapi-server-session-next
 ## Example
 
 ```javascript
@@ -27,7 +22,7 @@ const main = async () => {
   });
 
   await server.register({
-    plugin: require('hapi-server-session'),
+    plugin: require('hapi-server-session-next'),
     options: {
       cookie: {
         isSecure: false, // never set to false in production
@@ -86,39 +81,6 @@ will unset the cookie and delete the session from the cache.
 
 ## Changes
 
-### [v6.0.0](https://github.com/dennis-dong/hapi-server-session/compare/v6.0.0...v5.1.2)
+### [v6.0.0](https://github.com/dennis-dong/hapi-server-session-next/compare/v6.0.0...v6.0.0)
 
 - support hapi v21
-
-### [v5.1.0](https://github.com/btmorex/hapi-server-session/compare/v5.0.0...v5.1.0)
-
-- support vhost option
-
-### [v5.0.0](https://github.com/btmorex/hapi-server-session/compare/v4.3.0...v5.0.0)
-
-- support hapi v19
-
-### [v4.3.0](https://github.com/btmorex/hapi-server-session/compare/v4.2.0...v4.3.0)
-
-- add way to destroy the session
-
-### [v4.2.0](https://github.com/btmorex/hapi-server-session/compare/v4.1.0...v4.2.0)
-
-- default cookie `path` to `'/'`
-
-### [v4.1.0](https://github.com/btmorex/hapi-server-session/compare/v4.0.0...v4.1.0)
-
-- default cookie `ttl` to session `expiresIn`
-- remove `key` requirement on session `expiresIn`
-
-### [v4.0.0](https://github.com/btmorex/hapi-server-session/compare/v3.0.0...v4.0.0)
-
-- support hapi v17
-
-### [v3.0.0](https://github.com/btmorex/hapi-server-session/compare/v2.0.0...v3.0.0)
-
-- default `SameSite` flag to `Lax`. Could break sites that require session during certain kinds of cross site requests. See <https://www.owasp.org/index.php/SameSite>
-
-## Author
-
-[Avery Fay](https://averyfay.com/)
