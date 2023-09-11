@@ -81,6 +81,6 @@ will unset the cookie and delete the session from the cache.
 
 ## Changes
 
-### [v6.0.0](https://github.com/dennis-dong/hapi-server-session-next/compare/v6.0.0...v6.0.0)
+### [v6.0.1](https://github.com/dennis-dong/hapi-server-session-next/compare/v6.0.1...v6.0.1)
 
 - support hapi v21
